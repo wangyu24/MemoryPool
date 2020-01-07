@@ -5,6 +5,8 @@ Header-only
 C++17, GCC7.4
 
 How to use it:
+
+
   std::shared_ptr<std::string> sItem = memorypool::MemoryPoolManager<int, double, std::string>::Instance().alloc<std::string>();
   *sItem = "HELLO";
   std::cout << *sItem << std::endl;
