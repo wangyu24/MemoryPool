@@ -1,5 +1,5 @@
 # MemoryPool
-A memory pool manager which can support multiple different types.
+A memory pool manager which you can preallocate objects of multiple different types in advance, and then get it from the pool when in need without ad-hoc memory allocation anymore.
 
 Header-only
 C++17, GCC7.4
