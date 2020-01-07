@@ -4,17 +4,24 @@ A memory pool manager which you can preallocate objects of multiple different ty
 Header-only
 C++17, GCC7.4
 
-How to use it:
+Quick Start:
 
-
-  std::shared_ptr<std::string> sItem = memorypool::MemoryPoolManager<int, double, std::string>::Instance().alloc<std::string>();
+*******************************
+  auto sItem = memorypool::MemoryPoolManager<int, double, std::string>::Instance().alloc<std::string>();
+  
   *sItem = "HELLO";
+  
   std::cout << *sItem << std::endl;
 
-  std::shared_ptr<int> iItem = memorypool::MemoryPoolManager<int, double, std::string>::Instance().alloc<int>();
+  auto iItem = memorypool::MemoryPoolManager<int, double, std::string>::Instance().alloc<int>();
+  
   *iItem = 100;
+ 
   std::cout << *iItem << std::endl;
 
-  std::shared_ptr<double> dItem = memorypool::MemoryPoolManager<int, double, std::string>::Instance().alloc<double>();
+  auto dItem = memorypool::MemoryPoolManager<int, double, std::string>::Instance().alloc<double>();
+  
   *dItem = 11.2;
+  
   std::cout << *dItem << std::endl;
+******************************
