@@ -1,8 +1,8 @@
 # MemoryPool
-A memory pool manager which you can preallocate objects of multiple different types in advance, and then get it from the pool when in need without ad-hoc memory allocation anymore.
+A memory pool manager which you can preallocate shared_ptr objects of multiple different types in advance, and then get it from the pool in need without ad-hoc memory allocation.
 
 Header-only
-C++17, GCC7.4
+C++17, GCC 7.4
 
 Quick Start:
 
